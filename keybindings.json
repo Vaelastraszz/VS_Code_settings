@@ -1,0 +1,83 @@
+// Place your key bindings in this file to override the defaults
+[
+  {
+    "key": "cmd+b",
+    "command": "python.execInTerminal-icon"
+  },
+  {
+    "key": "cmd+m",
+    "command": "sqlite.runDocumentQuery",
+    "when": "editorLangId =~ /(sql|sqlite)/"
+  },
+  {
+    "key": "shift+cmd+q",
+    "command": "-sqlite.runDocumentQuery",
+    "when": "editorLangId =~ /(sql|sqlite)/"
+  },
+  {
+    "key": "cmd+n",
+    "command": "extension.advancedNewFile"
+  },
+  {
+    "key": "alt+cmd+n",
+    "command": "-extension.advancedNewFile"
+  },
+  {
+    "key": "space",
+    "command": "whichkey.show",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  },
+  {
+    "key": "tab",
+    "command": "workbench.action.nextEditor",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+},
+{
+    "key": "shift+tab",
+    "command": "workbench.action.previousEditor",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+},
+{
+  "key": "shift+n",
+  "command": "editor.action.addCommentLine",
+  "when": "editorTextFocus && !editorReadonly && vim.active && vim.mode != 'Insert'"
+},
+{
+  "key": "cmd+k cmd+c",
+  "command": "-editor.action.addCommentLine",
+  "when": "editorTextFocus && !editorReadonly"
+},
+{
+  "key": "n",
+  "command": "editor.action.removeCommentLine",
+  "when": "editorTextFocus && !editorReadonly && vim.active && vim.mode != 'Insert'"
+},
+{
+  "key": "cmd+k cmd+u",
+  "command": "-editor.action.removeCommentLine",
+  "when": "editorTextFocus && !editorReadonly"
+},
+{
+  "key": "shift+m",
+  "when": "sideBarFocus",
+  "command": "workbench.action.focusActiveEditorGroup"
+},
+{
+  "key": "shift+q",  // Customize this key combination as needed
+  "when": "editorTextFocus && vim.mode == 'Normal'",
+  "command": "workbench.view.explorer"
+},
+{
+  "key": "r",
+  "command": "renameFile",
+  "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+},
+{
+  "key": "enter",
+  "command": "-renameFile",
+  "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+},
+
+
+
+]
