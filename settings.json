@@ -11,7 +11,7 @@
     "asvetliakov.vscode-neovim": 1
   },
   "files.associations": {
-    "*.sql": "jinja-sql"
+    "*.sql": "sql"
   },
   "git.autofetch": true,
   "git.confirmSync": false,
@@ -19,13 +19,31 @@
   "gitlens.hovers.currentLine.over": "line",
   "gitlens.views.commitDetails.files.layout": "tree",
   "editor.lineNumbers": "relative",
-  "json.schemas": [],
+
+  "json.schemas": [
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  ],
   "redhat.telemetry.enabled": true,
   "security.workspace.trust.untrustedFiles": "open",
   "sqlfluff.dbtInterface.enabled": true,
   "sqlfluff.dialect": "postgres",
-  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.fontSize": 16,
   "vim.normalModeKeyBindings": [
+
     {
       "after": [
         "$"
@@ -149,7 +167,7 @@
       "before": [
         "à"
       ]
-    }
+    },
   ],
   "vim.operatorPendingModeKeyBindings": [
     {
@@ -239,7 +257,7 @@
       "before": [
         "à"
       ]
-    }
+    },
   ],
   "vim.visualModeKeyBindings": [
     {
@@ -267,24 +285,24 @@
       ]
     }
   ],
-  "vscode_vibrancy.opacity": -0.7,
+  "vscode_vibrancy.opacity": 0,
   "vscode_vibrancy.preferedLightTheme": "Default Dark",
   "vscode_vibrancy.refreshInterval": 1,
   "vscode_vibrancy.theme": "Default Dark",
   "window.titleBarStyle": "custom",
-  "workbench.colorTheme": "GitHub Dark",
+  "workbench.colorTheme": "Tokyo Night",
   "terminal.integrated.env.osx": {
     "Q_NEW_SESSION": "1"
   },
-  "python.defaultInterpreterPath": "/opt/homebrew/bin/python3",
-  "python.analysis.diagnosticSeverityOverrides": {
-    "reportMissingImports": "none"
-  },
+    "python.defaultInterpreterPath": "/opt/homebrew/bin/python3",
+    "python.analysis.diagnosticSeverityOverrides": {
+        "reportMissingImports": "none"
+    },
   "explorer.sortOrder": "type",
   "warmUp.changeCount": "15",
   "editor.cursorSurroundingLines": 10,
   "editor.cursorBlinking": "solid",
-  "vim.leader": " ",
+  "vim.leader" : " " ,
   "whichkey.sortOrder": "alphabetically",
   "whichkey.bindings": [
     {
@@ -422,7 +440,7 @@
         {
           "key": "g",
           "name": "Lazy Git",
-          "command": "lazygit.openLazygit"
+          "command":"lazygit.openLazygit",
         }
       ]
     },
@@ -431,8 +449,44 @@
       "name": "Run code...",
       "type": "command",
       "command": "code-runner.run"
-    }
+    },
+    {
+      "key": "j",
+      "name": "Prettier Json...",
+      "type": "command",
+      "command": "extension.prettyJSON"
+    },
   ],
-  "workbench.iconTheme": "eq-material-theme-icons-deepforest",
-  "workbench.settings.applyToAllProfiles": []
+  "workbench.iconTheme": "symbols",
+  "workbench.settings.applyToAllProfiles": [
+
+  ],
+  "editor.unicodeHighlight.ambiguousCharacters": false,
+  "terminal.external.osxExec": "Warp.app",
+  "terminal.integrated.fontFamily": "CaskaydiaCove Nerd Font",
+  "symbols.hidesExplorerArrows": false,
+  "notebook.lineNumbers": "on",
+  "warmUp.changeTypingMode": "code snippets",
+  "apc.statusBar": {
+    "position": "editor-bottom",
+    "fontSize": 15
+  },
+  "apc.activityBar": {
+    "position": "bottom",
+    "size": 50,
+    "itemSize": 35 
+  },
+  "window.titleBarStyle":"native",
+  "apc.electron": {
+    "frame":false,
+    "titleBarStyle": "hiddenInset",
+    "trafficLightPosition": {
+      "x": 7,
+      "y": 5
+    }
+  },
+  "apc.font.family": "CaskaydiaCove Nerd Font",
+  "apc.menubar.compact": true,
+  "window.commandCenter": false,
+  "workbench.layoutControl.enabled": false,
 }
