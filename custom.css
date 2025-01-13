@@ -28,15 +28,24 @@
   font-family: "Cascadia Code", monospace !important;
   font-size: 14px !important;
   font-weight: 400 !important;
-  color: #ffffff !important;
+}
+
+/* File Explorer File Label */
+.monaco-list .monaco-list-row .monaco-icon-label.file-icon {
+  color: #a0c4ff !important; /* Light Blue for files */
+}
+
+/* File Explorer Folder Label */
+.monaco-list .monaco-list-row .monaco-icon-label.folder-icon {
+  color: #ffa07a !important; /* Light Coral for folders */
 }
 
 /* File Explorer Selected Item */
 .monaco-list.list_id_1 .monaco-list-row.selected {
   background-color: #4f5971 !important;
   opacity: 1 !important;
-    border-top: 1px #727b90 solid;
-    border-bottom: 1px #727b90 solid;
+  border-top: 1px #727b90 solid;
+  border-bottom: 1px #727b90 solid;
 }
 
 /* Tooltip box style */
